@@ -159,11 +159,11 @@ function nestedComments(data) {
   });
 }
 const NestedComments = () => {
-  const elem = nestedComments(comments);
+  const comments = nestedComments(comments);
   useEffect(() => {
-    console.log("element is: ", elem);
+    console.log("element is: ", comments);
   }, []);
-  return <div className="m-4">{elem}</div>;
+  return <div className="m-4">{comments}</div>;
 };
 
 export default NestedComments;
